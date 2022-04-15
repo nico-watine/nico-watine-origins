@@ -1,0 +1,16 @@
+# www.robotstxt.org/
+# www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
+
+User-agent: *
+Disallow: /_ignores/
+Disallow: /.git/
+Disallow: /.gitignore/
+Disallow: /.htaccess
+Disallow: /config.codekit
+Disallow: /tine.email/
+Disallow: /tine.rocks/
+Disallow: /houstonphotoblog.net/
+Disallow: /houstonuncovered.com/
+Disallow: /myclient.rocks/
+Disallow: /studionclient.rocks/
+Disallow: /wegotengagedin.paris/
