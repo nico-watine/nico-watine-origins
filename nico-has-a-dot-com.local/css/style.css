@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.skeleton_home
+{
+	margin: 200px auto 0 auto;
+	position: relative;
+	height: 500px;
+	width: 1020px;
+}
+
+.skeleton
+{
+	margin: 100px auto 0 auto;
+	position: relative;
+	height: 500px;
+	width: 1020px;
+}
+
+body
+{
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.page_title
+{
+	font-size: 30px;
+	line-height: 60px;
+}
+
