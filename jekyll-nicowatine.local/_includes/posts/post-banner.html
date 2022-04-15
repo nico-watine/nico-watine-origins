@@ -1,0 +1,27 @@
+<!-- LARGE WRAPPER -->
+<a href="{{ site.url}}/img/blog/{{ page.image-full }}" class="fancybox" title="{{ page.image-title }}">
+<div id="large-wrapper" class="show-for-medium-up">
+    <!-- LARGE PARALLAX -->
+    <div id="parallax-wrapper">
+        <div class="parallax-banner-large" style="background-image: url('{{ site.url }}/img/blog/{{ page.image-parallax }}');" data-0="background-position: 0px -200px;" data-500="background-position:0px -200px;">
+            <div class="row">
+                    <div class="small-12 medium-10 columns small-centered post-title-parallax">
+                        <h1>{{ page.title }} <span style="float: right;"><small>{{ page.long-date }}</small></span></h1>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</a>
+
+
+
+<!-- SMALL STATIC -->
+<div class="static-banner-small show-for-small-only" style="background-image: url('{{ site.url }}/img/blog/{{ page.image-small }}');">
+    <br>
+    <br>
+    <br>
+    <div class="row">
+                <h1 class="post-title-small">{{ page.title }}</h1>
+    </div>
+</div>

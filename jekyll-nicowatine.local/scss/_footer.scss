@@ -1,0 +1,107 @@
+.footer-container {
+	background: #cecece;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-widget p {
+	font-size: 12px;
+	text-align: center;
+	color: #777777;
+}
+
+.snc-logo-footer {
+	width: 30px;
+	height: 30px;
+}
+
+.snc-link-footer {
+	position: relative;
+	top: 0;
+	z-index: 100;
+	opacity: 1;
+	width: 130px;
+	margin: 0 auto;
+
+		&:hover {
+			opacity: 0;
+		}
+
+		p {
+			text-decoration: none;
+		}
+}
+
+.snc-link-footer-hover {
+	position: relative;
+	top: -50px;
+	z-index: 200;
+	opacity: 0;
+	width: 130px;
+	margin: 0 auto;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		p a {
+			color: white;
+			text-decoration: none;
+		}
+
+}
+
+.snc-link-footer-transparent {
+	position: relative;
+	top: 0;
+	z-index: 100;
+	opacity: 1;
+	width: 130px;
+	margin: 0 auto;
+
+		&:hover {
+			opacity: 0;
+		}
+
+		p {
+			text-decoration: none;
+		}
+}
+
+.snc-link-footer-hover-transparent {
+	position: relative;
+	top: -50px;
+	z-index: 200;
+	opacity: 0;
+	width: 130px;
+	margin: 0 auto;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		p a {
+			text-decoration: none;
+		}
+
+		&:hover {
+			color: #333;
+		}
+
+}
+
+.snc-footer-widget {
+	height: 38px;
+}
+
+.footer-fixed-bottom {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+.footer-container-transparent {
+	background-color: rgba(#ffffff, .5);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

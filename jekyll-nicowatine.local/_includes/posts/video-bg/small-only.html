@@ -1,0 +1,68 @@
+<!-- SMALL ONLY -->
+<section class="show-for-small-only">
+	
+	{% include nav/nav-mobile.html %}
+	{% include header/header-transparent.html %}
+	
+	<!-- BACKGROUND IMAGE -->
+	<div class="bgimg"></div>
+	
+	<hr>
+	
+	<div class="container">
+
+		<!-- POST TITLE -->
+		<div class="row white-bg">
+		        <div class="small-12 medium-10 columns small-centered">
+		            <h1 class="post-title-video">{{ page.title-mobile }} <span style="float: right;"><small>{{ page.long-date }}</small></span></h1>
+		        </div>
+		</div> 
+
+		<!-- POST ENTRY -->
+		<div class="row white-bg">
+	        <section class="small-12 medium-10 columns small-centered">
+	        	<!-- POST DATE -->
+	            <h3 class="post-date-small show-for-small-only">{{ page.long-date }}</h3>
+
+	            <hr>
+
+	            <!-- POST CONTENT -->
+	            <article class="post">                
+	                <div class="post-content">
+	                    {{ content }}
+	                </div>                
+	                <hr>
+	            </article>
+
+	            <!-- POST TAGS  -->      
+	            <ul class="inline-list">
+	                <li class="category-tag">Tags:</li>
+	                <li class="category-tag"><a href="{{ site.url }}/{{ page.category-link }}">{{ page.category }}</a></li>
+	                <li class="category-tag"><a href="{{ site.url }}/{{ page.category-link-2 }}">{{ page.category-2 }}</a></li>
+	                <li class="category-tag"></li>
+	            </ul>
+
+				<!-- POST NAVIGATION -->
+				<div id="page-navigation"> 
+			        <div class="clear">&nbsp;</div> 
+			        <div class="left"> 
+			        {% if page.previous.url %} 
+			                <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+			        {% endif %} 
+			        </div> 
+
+			        <div class="right"> 
+			        {% if page.next.url %} 
+			                <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo; </a> 
+			        {% endif %} 
+			        </div> 
+			        <div class="clear">&nbsp;</div> 
+				</div> 
+
+	        </section>
+		</div><!-- /POST ENTRY -->
+	</div> <!-- /CONTAINER -->
+
+	{% include nav/nav-mobile-end.html %}
+
+</section>

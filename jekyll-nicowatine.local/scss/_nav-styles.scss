@@ -1,0 +1,13 @@
+.nav-light {
+    background: #cecece !important;
+}
+
+.nav-light li,
+.nav-light li a {
+    background: #cecece !important;
+
+        &:hover {
+                background: #e5e5e5 !important;
+                color: #444444 !important;
+            }
+}

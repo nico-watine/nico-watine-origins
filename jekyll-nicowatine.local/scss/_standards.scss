@@ -1,0 +1,60 @@
+html, body {
+	font-family: 'Droid Sans', sans-serif;
+	color: #333333;
+	// height:100%;
+}
+
+.row {
+	padding-top: 20px;
+}
+
+.row-top {
+	padding-top: 0 !important;
+}
+
+.centered-text-container {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.centered-text {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.no-padding-margin {
+	padding: 0;
+	margin: 0;
+}
+
+.bold {
+	font-weight: 500;
+}
+
+.black {
+	color: #333 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Ubuntu', sans-serif;
+	color: #222222;
+}
+
+.ubuntu {
+	font-family: 'Ubuntu', sans-serif !important;
+}
+
+.droid {
+	font-family: 'Droid Sans', sans-serif !important;
+}
+
+.white-bg {
+	background-color: rgba(#ffffff, .5);
+}

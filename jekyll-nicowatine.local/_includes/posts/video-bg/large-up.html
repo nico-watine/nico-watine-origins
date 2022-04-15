@@ -1,0 +1,72 @@
+<!-- LARGE & UP -->
+<section class="show-for-large-up">
+
+	{% include header/header-transparent.html %}
+	{% include nav/nav-standard-light.html %}
+
+	<!-- HTML5 VIDEO BACKGROUND CODE -->
+	<video autoplay loop preload="auto" poster="{{ site.awsurl }}/img/vid/downtown-panorama(large)2.jpg" id="bgvid">
+		<source src="{{ site.awsurl }}/img/vid/downtown-panorama/downtown.mp4" type="video/mp4">
+		<source src="{{ site.awsurl }}/img/vid/downtown-panorama/downtown.webm" type="video/webm">
+		<source src="{{ site.awsurl }}/img/vid/downtown-panorama/downtown.ogv" type="video/ogg" >
+		<source src="{{ site.sncurl }}/img/vid/downtown-panorama/downtown.mp4" type="video/mp4">
+		<source src="{{ site.sncurl }}/img/vid/downtown-panorama/downtown.webm" type="video/webm">
+		<source src="{{ site.sncurl }}/img/vid/downtown-panorama/downtown.ogv" type="video/ogg" >
+	</video>
+
+	<!-- BODY CONTAINER -->
+	<main class="container">
+		<!-- POST TITLE -->
+		<div class="row white-bg">
+			<div class="small-12 medium-10 columns small-centered">
+				<h1 class="post-title-video">{{ page.title }} <span style="float: right;"><small>{{ page.long-date }}</small></span></h1>
+			</div>
+		</div>
+
+		<!-- POST ENTRY -->
+		<div class="row white-bg">
+			<section class="small-12 medium-10 columns small-centered">
+
+				<!-- POST DATE -->
+				<h3 class="post-date-small show-for-small-only">{{ page.long-date }}</h3>
+
+				<hr>
+
+				<!-- POST CONTENT -->
+				<article class="post">                
+					<div class="post-content">
+						{{ content }}
+					</div>              
+					
+				<hr>
+				</article>
+
+				<!-- POST TAGS -->
+				<ul class="inline-list">
+					<li class="category-tag">Tags:</li>
+					<li class="category-tag"><a href="{{ site.url }}/{{ page.category-link }}">{{ page.category }}</a></li>
+					<li class="category-tag"><a href="{{ site.url }}/{{ page.category-link-2 }}">{{ page.category-2 }}</a></li>
+					<li class="category-tag"></li>
+				</ul>
+				
+				<!-- POST PAGINATION -->
+				<div id="page-navigation"> 
+					<div class="clear">&nbsp;</div> 
+					<div class="left"> 
+						{% if page.previous.url %} 
+						<a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
+						{% endif %} 
+					</div> 
+
+					<div class="right"> 
+						{% if page.next.url %} 
+						<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo; </a> 
+						{% endif %} 
+					</div> 
+					<div class="clear">&nbsp;</div> 
+				</div>
+
+			</section>
+		</div><!-- /POST ENTRY -->
+	</main><!-- /MAIN -->
+</section><!-- /LARGE & UP -->

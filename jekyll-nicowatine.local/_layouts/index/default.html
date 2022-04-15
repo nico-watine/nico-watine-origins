@@ -1,0 +1,72 @@
+{% include head.html %}
+
+<body>
+
+<div class="show-for-small-only">
+{% include nav/nav-mobile.html %}
+{% include header/header.html %}
+	<div class="container">
+	    <div class="row">
+	        <div class="small-10 columns end small-centered" style="text-align: center;">
+	            {{ content }}
+	            <hr>
+	        </div>
+	        <section class="small-10 columns end small-centered">
+	            <ul class="post-list no-bullet" style="text-align: center;">
+	              {% for post in site.posts %}
+	                <li>
+	                    <h5>{{ post.short-date }} -- <a href="{{ post.url }}">{{ post.title }}</a>
+	                    <br>
+	                    <span class="excerpt">{{ post.excerpt }}</span></h5>
+	                </li>
+	              {% endfor %}
+	            </ul>   
+	        </section><!-- /.blog-main -->
+	    </div><!-- /.row -->
+	</div><!-- /.container -->
+
+	<section class="show-for-medium-up footer-fixed-bottom">
+	    {% include footer/footer.html %}
+	</section>
+
+	<section class="show-for-small-only">
+	    {% include footer/footer.html %}
+	</section>
+{% include nav/nav-mobile-end.html %}
+</div>           
+
+<div class="show-for-medium-up">
+{% include header/header.html %}
+{% include nav/nav-standard.html %}
+<div class="container">
+    <div class="row">
+        <div class="small-10 columns end small-centered" style="text-align: center;">
+            {{ content }}
+            <hr>
+        </div>
+        <section class="small-10 columns end small-centered">
+            <ul class="post-list no-bullet" style="text-align: center;">
+              {% for post in site.posts %}
+                <li>
+                    <h5>{{ post.short-date }} -- <a href="{{ post.url }}">{{ post.title }}</a>
+                    <br>
+                    <span class="excerpt">{{ post.excerpt }}</span></h5>
+                </li>
+              {% endfor %}
+            </ul>   
+        </section><!-- /.blog-main -->
+    </div><!-- /.row -->
+</div><!-- /.container -->
+
+<section class="show-for-medium-up footer-fixed-bottom">
+    {% include footer/footer.html %}
+</section>
+
+<section class="show-for-small-only">
+    {% include footer/footer.html %}
+</section>
+</div>
+
+{% include scripts/blog-category.html %}
+
+</body>
