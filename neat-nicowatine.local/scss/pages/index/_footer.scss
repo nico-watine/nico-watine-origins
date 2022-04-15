@@ -1,0 +1,35 @@
+@import "../../settings/_settings.scss";
+
+#index {
+	.portfolio-link,
+	.email-link {
+		@include span-columns(8 of 16);
+	}
+
+	.portfolio-link {
+		text-align: left;
+	}
+
+	.email-link {
+		text-align: right;
+	}
+
+	footer {
+		h3 {
+			a {
+				&:hover,
+				&:focus,
+				&:active {
+					color: $lime-green !important;
+					text-decoration: none;
+				}
+			}
+
+			span {
+				color: $lime-green;
+			}
+		}
+	}
+}
+
+

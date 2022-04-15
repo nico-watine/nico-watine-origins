@@ -1,0 +1,15 @@
+@import "../settings/_settings.scss";
+
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:300,400");
+
+@font-face {
+  font-family: 'Knul ExtraBold';
+  src: url('/fonts/knul/extra-bold/knul.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/knul/extra-bold/knul.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/knul/extra-bold/knul.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/knul/extra-bold/knul.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/knul/extra-bold/knul.svg#bd94440c62702be187ab1afc5afdee26') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}

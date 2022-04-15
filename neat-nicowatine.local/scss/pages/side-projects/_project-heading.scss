@@ -1,0 +1,25 @@
+@import "../../settings/_settings.scss";
+
+.project-heading {
+	margin-bottom: em(30);
+
+	.page-title {
+		@include shift(1);
+		
+		h1 {
+			font-family: $header-font-family;
+			display: inline-block;
+			margin-top: rem(10);
+		}
+	}
+
+	.app-logo {
+		margin-top: em(-20);
+		margin-left: em(20);
+	}
+}
+
+
+.app-logo#photoshop {
+	max-width: em(65);
+}

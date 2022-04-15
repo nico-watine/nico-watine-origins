@@ -1,0 +1,13 @@
+@import "../../settings/_settings.scss";
+
+.project-info#scenic-postcard {
+	figure {
+		margin: 0 auto;
+		@include span-columns(10 of 16);
+	}
+
+	article {
+		@include span-columns(6 of 16);
+
+	}
+}

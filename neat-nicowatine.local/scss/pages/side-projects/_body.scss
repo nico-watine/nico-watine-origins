@@ -1,0 +1,11 @@
+@import "../../settings/_settings.scss";
+
+#side-projects {
+	background: url('/img/side-projects/bg/1.jpg') center center no-repeat;
+	background-color: $dark-blue;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+}
+

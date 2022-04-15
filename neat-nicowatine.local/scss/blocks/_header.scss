@@ -1,0 +1,20 @@
+@import "../settings/_settings.scss";
+
+header {
+	padding: em(30) em(30) 0px;
+	margin-bottom: em(30);
+}
+
+.category-link {
+	@include span-columns(8 of 16);
+}
+
+.main-menu {
+	@include span-columns(8 of 16);
+	text-align: right;
+}
+
+.shifted-right {
+	@include shift(8 of 16);
+}
+

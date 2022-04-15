@@ -1,0 +1,11 @@
+@import "../../settings/_settings.scss";
+
+
+#index {
+	background: url('/img/index/bg/1.jpg') center center no-repeat;
+	background-color: $lime-green;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+}

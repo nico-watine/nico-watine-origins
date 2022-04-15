@@ -1,0 +1,41 @@
+@import "../settings/_settings.scss";
+
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+// Highlighted Text Effect
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}

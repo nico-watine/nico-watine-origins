@@ -1,0 +1,57 @@
+@import "../../settings/_settings.scss";
+
+#side-projects {
+	main {
+		h1 {
+			text-align: center;
+			margin-bottom: rem(16);
+		}
+	}
+}
+
+.row#scenic-postcard {
+	.banner-container {
+		background: rgba(255,255,255,0.40);
+		box-shadow: inset 0px 0px em(3) 0px #000;
+		border-radius: em(4);
+		background-image: url('/img/side-projects/scenic-postcard/banner-link.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: em(300);
+		@include span-columns(10 of 16);
+		@include shift(3);
+		background-position: center rem(30);
+
+		@include transition(background-position .15s cubic-bezier(.25,.1,.25,1));
+
+		&:hover {
+			background-position: center;
+		}
+	}
+}
+
+.project-feed {
+	.banner-container {
+		.title-wrapper {
+			position: relative;
+			height: 100%;
+
+			h3 {
+				margin: 0;
+				padding: rem(10);
+				background: rgba(73,73,73,0.80);
+				position: absolute;
+				bottom: 0;
+				text-align: right;
+				width: 100%;
+			}
+
+			&:hover {
+				h3 {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+

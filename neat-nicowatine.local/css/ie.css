@@ -1,0 +1,29 @@
+html { box-sizing: border-box; }
+
+*, *::after, *::before { box-sizing: inherit; }
+
+a.button, button { border-radius: 4px; font-size: 21px; padding: 16px 32px; }
+
+html { font-size: 16px; }
+
+p { margin-bottom: 22px; }
+
+hr { height: 1px; }
+
+h1, h2, h3, h4, h5, h6 { margin: 3px auto 8px; }
+
+h5, h6 { letter-spacing: 1px; }
+
+h1 { font-size: 37px; }
+
+h2 { font-size: 32px; }
+
+h3, p.large { font-size: 28px; }
+
+h4 { font-size: 21px; }
+
+h5 { font-size: 16px; }
+
+h6 { font-size: 12px; }
+
+.padding { padding: 0 16px; }

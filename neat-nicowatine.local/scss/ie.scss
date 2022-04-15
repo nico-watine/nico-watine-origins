@@ -1,0 +1,13 @@
+
+// BOURBON-NEAT FILES
+@import "bourbon";
+@import "neat";
+
+// IE PARTIALS IMPORTS
+@import "blocks/_ie.scss";
+@import "components/_ie.scss";
+
+// IE PAGES
+@import "pages/index/_ie.scss"
+
+

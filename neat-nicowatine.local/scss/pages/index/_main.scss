@@ -1,0 +1,19 @@
+@import "../../settings/_settings.scss";
+
+#index {
+	main {
+		text-align: center;
+	}
+
+	h1 {
+		font-size: rem(90);
+		font-spacing: rem(2.25);
+		text-shadow: rem(2) rem(3) rem(3) #000;
+	}
+
+	h2 {
+		span {
+			display: inline-block;
+		}
+	}
+}

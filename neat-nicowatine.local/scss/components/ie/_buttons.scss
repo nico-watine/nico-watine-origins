@@ -1,0 +1,9 @@
+@import "../../settings/_settings-ie.scss";
+
+
+a.button,
+button {
+    border-radius: 4px;
+    font-size: $h4-size; 
+    padding: 16px 32px;
+}

@@ -1,0 +1,143 @@
+@import "../settings/_settings.scss";
+@import "_fonts.scss";
+
+html {
+	font-size: 1em;
+}
+
+html,
+input,
+button,
+textarea {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	color: $text-color;
+	font-weight: $body-font-weight;
+	font-family: $body-font-family;
+	line-height: $baseline;
+}
+
+p {
+	margin-bottom: 1.4rem;
+}
+
+a,
+a:visited {
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+hr {
+	border: 0;
+	background-color: $hr-color;
+	height: em(1);
+	margin: $baseline 0;
+}
+
+.title {
+	font-family: $header-font-family;
+	// margin: .2rem auto .5rem; 
+	margin: 0 auto;
+	line-height: 1.2;
+	font-weight: $header-font-weight;
+}
+
+h1, 
+h2, 
+h3, 
+h4,
+h5,
+h6 {
+	font-family: $body-font-family;
+	margin: .2rem auto .5rem; 
+	line-height: 1.2;
+	font-weight: $body-font-weight;
+}
+
+h5,
+h6 {
+	line-height: 1.5;
+	letter-spacing: rem(1);
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: $h1-size;
+	// font-weight: 300;
+}
+
+h2 {
+	font-size: $h2-size;
+	// font-weight: 300;
+}
+
+h3 {
+	font-size: $h3-size;
+}
+
+h4 {
+	font-size: $h4-size;
+}
+
+h5 {
+	font-size: $h5-size;
+}
+
+h6 {
+	font-size: $h6-size;
+}
+
+@include media($medium) {
+	
+	h1 {
+		font-size: $h2-size;
+	}
+
+	h2 {
+		font-size: $h3-size;
+	}
+
+	h3 {
+		font-size: $h4-size;
+	}
+
+	h4 {
+		font-size: $h5-size;
+	}
+
+	h5 {
+		font-size: $h6-size;
+	}
+
+	h6 {
+		font-size: $h6-size;
+	}
+}
+
+
+.inverse {
+    color: #fff !important;
+    text-shadow: $dark-text-shadow;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	a,
+	button {
+	    color: #fff !important;
+	    text-shadow: $dark-text-shadow;
+   }
+}
+

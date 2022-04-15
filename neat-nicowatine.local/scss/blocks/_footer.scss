@@ -1,0 +1,38 @@
+@import "../settings/_settings.scss";
+
+
+footer {
+	padding: em(32);
+	text-align: right;
+	color: #f1f1f1;
+	background: rgba(44,44,44,0.70);
+	box-shadow: inset 0px 0px em(5) em(1) #000;
+
+	img#html5-shield {
+		max-width: em(30);
+	}
+}
+
+footer.clear {
+	background: none;
+	box-shadow: none;
+}
+
+ul.footer-nav {
+	padding: 0;
+	margin: 0 0 rem(6);
+	float: right;
+
+	li {
+		display: inline-block;
+		margin: 0 0 0 rem(20);
+		font-size: rem(12);
+		letter-spacing: rem(1);
+
+		a {
+			color: #f1f1f1;
+			text-transform: uppercase;
+		}
+	}
+}
+

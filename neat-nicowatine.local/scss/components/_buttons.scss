@@ -1,0 +1,46 @@
+@import "../settings/_settings.scss";
+
+button {
+    border: none;
+}
+
+a.button,
+button {
+    cursor: pointer;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    border-radius: em(4);
+    font-size: $h4-size; // 21px
+    padding: 1rem 2rem; // 16px 32px
+    text-decoration: none;
+    color: #fff;
+    background-color: #777;
+
+    @include transition (background-color 200ms ease-out 0s);
+    @include transition (color 200ms ease-out 0s);
+
+    &:hover {
+        color: #000;
+        background-color: #ccc;
+    }
+
+    @include media($medium) {
+        font-size: $h5-size; // 16px
+        padding: .8rem 1.3rem 1rem; // 13px 21px 16px
+    }
+}
+
+
+button.menu-toggle {
+    outline: none;
+    border-radius: 0;
+    color: $text-color;
+    font-size: $h4-size;
+    background: none;
+    font-family: $header-font-family;
+    padding: 0;
+    letter-spacing: em(2);
+}
+
