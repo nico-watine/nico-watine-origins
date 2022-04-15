@@ -1,0 +1,8 @@
+config.codekit
+*.sublime-project
+*.sublime-workspace
+.jekyll-metadata
+node_modules
+assets
+_site
+_ignores/plugins

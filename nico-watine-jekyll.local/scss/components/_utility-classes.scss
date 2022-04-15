@@ -1,0 +1,54 @@
+@import "../settings/_settings.scss";
+
+
+.inline-block {
+	display: inline-block;
+}
+
+
+.shadow-1 {
+	box-shadow: $z-1;
+}
+
+.shadow-2 {
+	box-shadow: $z-2;
+}
+
+.shadow-3 {
+	box-shadow: $z-3;
+}
+
+.shadow-4 {
+	box-shadow: $z-4;
+}
+
+.shadow-5 {
+	box-shadow: $z-5;
+}
+
+
+
+
+
+
+// COMMENTED OUT UNUSED STYLES TO MINIMIZE CSS FILE SIZE :::
+
+// .outer-container {
+// 	@include outer-container;
+// }
+
+.row {
+	@include row;
+}
+
+.padding {
+	padding: 0 1em; // 0 16px
+}
+
+// .underline {
+// 	text-decoration: underline;
+// }
+
+// .margin-bottom {
+// 	margin-bottom: rem(20);
+// }

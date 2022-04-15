@@ -1,0 +1,16 @@
+@import "../settings/_settings.scss";
+
+@font-face {
+  font-family: 'Lintel-Bold';
+  src: url('#{$url}/fonts/lintel/bold/lintel-bold.eot'); /* IE9 Compat Modes */
+  src: url('#{$url}/fonts/lintel/bold/lintel-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('#{$url}/fonts/lintel/bold/lintel-bold.woff') format('woff'), /* Modern Browsers */
+       url('#{$url}/fonts/lintel/bold/lintel-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('#{$url}/fonts/lintel/bold/lintel-bold.svg#871b20619a054670bc3222f9abf55d70') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+// @import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");

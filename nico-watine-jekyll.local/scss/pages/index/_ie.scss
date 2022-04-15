@@ -1,0 +1,32 @@
+@import "../../settings/_settings.scss";
+
+body#index {
+	h1 {
+		filter: progid:DXImageTransform.Microsoft.DropShadow(offX=3,offY=3,color=000000);
+	}
+
+	h2,
+	h3 {
+		filter: progid:DXImageTransform.Microsoft.DropShadow(offX=2,offY=2,color=000000);
+	}
+
+	footer {
+		padding: 0;
+
+		a {
+			filter: dropshadow(color=#000000, offx=2, offy=2);
+			display: block;
+		}
+	}
+
+	#portfolio {
+		padding-left: 5%;
+		padding-bottom: 3%;
+	}
+
+	#email {
+		padding-right: 5%;
+		padding-bottom: 3%;
+	}
+}
+

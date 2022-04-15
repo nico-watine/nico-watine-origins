@@ -1,0 +1,42 @@
+# Dependencies
+markdown:         rdiscount
+highlighter:      pygments
+ 
+# Permalinks
+permalink:        /:categories/:title
+ 
+# Server
+destination:      _site
+host:             localhost
+port:             9001
+url:       		  http://nicos-mbp.local:5757/
+baseurl:          /
+encoding:         UTF-8
+
+# LOCAL-DEV BRANCH
+cdn_url:       
+start_comment: <!--
+end_comment: -->
+
+# CDN-PRODUCTION BRANCH
+# cdn_url:         http://cdn.nicowatine.me  
+# start_comment: 
+# end_comment: 
+
+# UNCSS
+uncss:
+  stylesheets:            # a list of stylesheets to be processed; mandatory
+    - css/style.css
+  files:                  # html files to consider, globs are supported; default: **/*.html
+    - "**/*.php"
+  ignoreSheets: 
+    - "/fonts.googleapis/"
+  compress: true          # compress resulting css with sass; default- false
+  # ignore:                 # always keep rules for these selectors; default: none
+    # - ".is-loading"
+    # - "#titleBar"
+  # media:                  # additional media queries to consider; default: undefined
+    # - print
+  # timeout: 30             # how long to wait for the JS to be loaded; default: undefined
+
+

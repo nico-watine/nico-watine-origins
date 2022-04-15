@@ -1,0 +1,196 @@
+@import "../../settings/_settings.scss";
+
+$min-1451: "only screen and (min-width : 90.688em)";
+$max-1200: "only screen and (max-width : 75.000em)";
+$max-1040: "only screen and (max-width : 65em)";
+
+
+
+#index {
+	@media #{$min-1451} {
+		background: $lime-green url('#{$url}/img/index/bg/max.jpg') no-repeat fixed center center;
+		background-size: cover;
+	}
+
+	background: $lime-green url('#{$url}/img/index/bg/default.jpg') no-repeat fixed center center;
+	background-size: cover;
+
+	@media #{$max-1040} {
+		background: $lime-green url('#{$url}/img/index/bg/large.jpg') no-repeat fixed center center;
+		background-size: cover;
+	}
+
+	color: #fff;
+	text-shadow: 0 rem(3) rem(3) #000;
+
+	header {
+		text-align: center;
+		height: em(480);
+
+		.content {
+			position: absolute;
+			top: 5%;
+			width: 100%;
+
+			h1 {
+				font-size: rem(90);
+			}
+
+			#studio-n-creations {
+				display: inline-block;
+
+				a {
+					color: #fff;
+					text-shadow: 0 rem(2) rem(3) #000;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding: 0 5% 3%;
+
+		#portfolio {
+			float: left;
+		}
+
+		#email {
+			text-align: right;
+			float: right;
+		}
+
+		h3 {
+			font-size: rem(40);
+		}
+
+		a {
+			font-size: rem(31);
+			color: #fff;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+@media #{$max-1200} {
+	#index {
+		header {
+			.content {
+				padding: 0 2%;
+			}
+		}
+	}
+}
+@include media($width-770) {
+	#index {
+		* {
+			font-weight: $mobile-font-weight;
+		}
+
+		header {
+			.content {
+				top: 3%;
+
+				h1 {
+					font-size: rem(74);
+					margin-bottom: 0;
+				}
+
+				h2 {
+					font-size: rem(32);
+					padding: 0 5%;
+					line-height: 1.35;
+				}
+			}
+		}
+
+		footer {
+			h3 {
+				font-size: $h3-size;
+			}
+
+			a {
+				font-size: $h4-size;
+			}
+		}
+	}
+}
+
+@include media($width-610) {
+	#index {
+		footer {
+			#portfolio,
+			#email {
+				float: none;
+				text-align: center;
+				margin-bottom: rem(22);
+			}
+		}
+	}
+}
+
+@include media($width-480) {
+	#index {
+		header {
+			.content {
+				h1 {
+					font-size: rem(60);
+				}
+
+				h2 {
+					font-size: rem(28);
+				}
+			}
+		}
+
+		footer {
+			#portfolio {
+				margin-bottom: rem(8);
+			}
+
+			#email {
+				margin-bottom: rem(3);
+			}
+		}
+	}
+}
+
+@include media($width-320) {
+	#index {
+		header {
+			.content {
+				h1 {
+					font-size: rem(50);
+				}
+
+				h2 {
+					font-size: rem(23);
+				}
+			}
+		}
+
+		footer {
+			#portfolio {
+				margin-bottom: rem(14);
+			}
+
+			#email {
+				margin-bottom: rem(7);
+			}
+
+			h3 {
+				font-size: rem(23);
+			}
+			a {
+				font-size: rem(19);
+			}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+<script src="{{ site.cdn_url }}<?php autoVer('/js/scripts-min.js'); ?>"></script>
